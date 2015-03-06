@@ -1,0 +1,83 @@
+li.highlight {
+    display: inline-block;
+    padding: 5px;
+    list-style: none;
+}
+h4#highlight-headline, div#highlight-window {
+    text-align: left;
+    width: 90%;
+    color: white;
+}
+
+div#highlight-window {
+    margin-bottom: 20px;
+}
+
+button.highlight-close.btn.btn-default {
+    display: none;
+    position: relative;
+    bottom: 35px;
+    float: right;
+}
+
+img.team_logo {
+    width: 25px;
+    margin-right: 5px;
+}
+
+.highlight-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #1A1A1A;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.highlight-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -210px;
+    margin-left: -320px;
+}
+
+.tooltip {
+    font-size: 16px;
+}
+
+.scoreboard th {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+}
+
+table.scoreboard.table {
+    background-color: #5E7277;
+    color: white;
+}
+
+.pagination-lg > li > a.datepicker_link {
+    padding: 7px 14px;
+}
+
+input#datepicker {
+    display: none;
+}
+
+img.ui-datepicker-trigger {
+    width: 31px;
+}
+
+nav.datepicker_nav {
+    text-align: center;
+}
+
+.redsox_gameday a.ui-state-default {
+    background: #E61A38;
+    color: #ffffff;
+}

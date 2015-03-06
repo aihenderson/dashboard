@@ -1,0 +1,71 @@
+/*PANEL HEADING*/
+.media-body .user_name {
+    display: inline;
+    margin-bottom: 0;
+}
+
+.media-body .panel-heading-name-container a {
+    display: inline;
+}
+
+.media-body span.user_screen_name {
+    font-size: 10px;
+    color: #333333;
+}
+
+.media-body span.user_description {
+    font-size: 14px;
+}
+
+/*PANEL BODY*/
+.panel.panel-default.first-panel {
+    margin: 0;
+}
+
+.panel.panel-default {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.panel.panel-default.additional-panel {
+    margin: 0;
+    border-top: none;
+}
+
+.panel .panel-image-container {
+    position: relative;
+    max-height: 253px;
+    max-width: 100%;
+    padding: 0;
+    border-radius: 5px;
+    margin: 15px 0 0;
+    text-align: center;
+}
+
+.panel .panel-image {
+    display: inline-block;
+    max-height: 253px;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0;
+    border-radius: 5px;
+}
+
+
+.panel .panel-image:hover {
+    overflow: visible;
+}
+
+.panel .panel-thumbnail-image-container {
+    position: relative;
+    width: 100%;
+}
+
+.panel .panel-thumbnail-image {
+    display: inline-block;
+    max-height: 150px;
+    max-width: 150px;
+    margin: 0 5px;
+    padding: 0;
+    border-radius: 5px;
+}

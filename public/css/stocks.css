@@ -1,0 +1,28 @@
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.lookup_container_error, .stock_container_error {
+	margin: 20px 0; 
+}
+
+a.btn.btn-default.btn-xs.submit_button.lookup_add {
+    margin-left: 20px;
+}
+
+.lookup_container,.stock_container {
+    min-width: 345px;
+}
