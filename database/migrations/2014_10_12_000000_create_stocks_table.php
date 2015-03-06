@@ -15,9 +15,23 @@ class CreateStocksTable extends Migration {
 		Schema::create('stocks', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->string('symbol');
-			$table->rememberToken();
-			$table->timestamps();
+      $table->string('status');
+      $table->string('name');
+      $table->string('symbol');
+      $table->string('lastprice');
+      $table->string('change');
+      $table->string('changepercent');
+      $table->timestamps('timestamp');
+      $table->string('msdate');
+      $table->string('marketCap');
+      $table->string('volume');
+      $table->string('changeytd');
+      $table->string('changepercentytd');
+      $table->string('high');
+      $table->string('low');
+      $table->string('open');
+      $table->rememberToken();
+      $table->timestamps();
 		});
 	}
 
