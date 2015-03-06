@@ -14,14 +14,13 @@ class CreateStocksTable extends Migration {
 	{
 		Schema::create('stocks', function(Blueprint $table)
 		{
-			$table->increments('id');
+      $table->increments('id');
       $table->string('status');
       $table->string('name');
       $table->string('symbol');
       $table->string('lastprice');
       $table->string('change');
       $table->string('changepercent');
-      $table->timestamps('timestamp');
       $table->string('msdate');
       $table->string('marketCap');
       $table->string('volume');

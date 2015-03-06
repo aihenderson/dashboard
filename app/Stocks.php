@@ -20,7 +20,7 @@ class Stocks {
       $lastprice = $data['LastPrice'];
       $change = $data['Change'];
       $changepercent = $data['ChangePercent'];
-      $timestamp = $data['Timestamp'];
+      $updated_at = $data['Timestamp'];
       $msdate = $data['MSDate'];
       $marketCap = $data['MarketCap'];
       $volume = $data['Volume'];
