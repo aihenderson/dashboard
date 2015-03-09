@@ -81,3 +81,28 @@ nav.datepicker_nav {
     background: #E61A38;
     color: #ffffff;
 }
+
+.mixed_media {
+    display: none;
+}
+
+.media_links a {
+    text-decoration: none;
+}
+
+.show_media button {
+    float: right;
+}
+
+.show_media span.show_media_text {
+    margin-left: 3px;
+}
+
+ul.highlights {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+table.scoreboard {
+    margin-bottom: 10px;
+}

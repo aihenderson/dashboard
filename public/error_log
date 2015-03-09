@@ -120,3 +120,17 @@ Stack trace:
 [04-Mar-2015 20:55:05 EST] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/vmwmvcom/public_html/aihenderson/app/Http/Controllers/WidgetController.php on line 38
 [04-Mar-2015 20:57:46 EST] PHP Fatal error:  Call to undefined method Illuminate\Support\Facades\Request::has() in /home/vmwmvcom/public_html/aihenderson/app/Http/Controllers/WidgetController.php on line 20
 [05-Mar-2015 00:07:21 EST] PHP Fatal error:  Cannot use Illuminate\Http\Request as Request because the name is already in use in /home/vmwmvcom/public_html/aihenderson/app/Http/Controllers/WidgetController.php on line 9
+[05-Mar-2015 21:10:10 EST] PHP Fatal error:  Class 'App\DB' not found in /home/vmwmvcom/public_html/aihenderson/app/Stocks.php on line 8
+[05-Mar-2015 21:19:34 EST] PHP Fatal error:  Class 'App\Client' not found in /home/vmwmvcom/public_html/aihenderson/app/Stocks.php on line 14
+[05-Mar-2015 21:19:37 EST] PHP Fatal error:  Class 'App\Client' not found in /home/vmwmvcom/public_html/aihenderson/app/Stocks.php on line 14
+[05-Mar-2015 21:23:58 EST] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: client' in /home/vmwmvcom/public_html/aihenderson/app/Stocks.php:15
+Stack trace:
+#0 /home/vmwmvcom/public_html/aihenderson/app/Stocks.php(15): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Undefined varia...', '/home/vmwmvcom/...', 15, Array)
+#1 /home/vmwmvcom/public_html/aihenderson/app/Http/Controllers/WidgetController.php(35): App\Stocks->getData()
+#2 [internal function]: App\Http\Controllers\WidgetController->stocks(Object(App\Stocks))
+#3 /home/vmwmvcom/public_html/aihenderson/storage/framework/compiled.php(8265): call_user_func_array(Array, Array)
+#4 /home/vmwmvcom/public_html/aihenderson/storage/framework/compiled.php(8332): Illuminate\Routing\Controller->callAction('stocks', Array)
+#5 /home/vmwmvcom/public_html/aihenderson/storage/framework/compiled.php(8311): Illuminate\Routing\ControllerDispatcher->call(Object(App\Http\Controllers\WidgetController), Object(Illuminate\Routing\Route), 'stocks')
+#6 [internal functi in /home/vmwmvcom/public_html/aihenderson/app/Stocks.php on line 15
+[05-Mar-2015 21:23:58 EST] PHP Fatal error:  Call to a member function get() on a non-object in /home/vmwmvcom/public_html/aihenderson/app/Stocks.php on line 15
+[05-Mar-2015 21:24:50 EST] PHP Fatal error:  Call to a member function get() on a non-object in /home/vmwmvcom/public_html/aihenderson/app/Stocks.php on line 15

@@ -35,6 +35,11 @@ $(function () {
     }
   });
 
+    $('.show_media button').click(function(){
+        $(this).parent().parent().find('.mixed_media').finish().toggle("slow");
+        $('span:first-child', this).toggleClass( 'glyphicon-collapse-up', 'glyphicon-collapse-down');
+    })
+
   function highlightDays(date) {
     for (var i = 0; i < redsox_gameday.length; i++) {
       if (new Date(redsox_gameday[i]).toString().slice(0,10) == date.toString().slice(0,10)) {
@@ -42,6 +47,6 @@ $(function () {
       }
     }
     return [true, '', null];
-  }
+  };
 
 });

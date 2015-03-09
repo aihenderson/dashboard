@@ -42,6 +42,7 @@
           <li><a href="/dashboard">Dashboard</a></li>
           <li><a href="/widget/twitter">Twitter</a></li>
           <li><a href="/widget/mlb">Mlb</a></li>
+          <li><a href="/widget/stocks">Stocks</a></li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">

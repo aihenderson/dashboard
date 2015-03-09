@@ -25,6 +25,7 @@ Route::get('widget/mlb/next', 'WidgetController@mlb');
 Route::get('widget/mlb/{date}', 'WidgetController@mlb');
 
 Route::get('widget/stocks', 'WidgetController@stocks');
+Route::get('widget/stocks/{symbol}', 'WidgetController@stocks');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

@@ -10,15 +10,17 @@ class Stocks {
 
     $stock_symbols = DB::table('stocks')->get();
     $stocks = [];
+    $data = '';
     foreach($stock_symbols as $symbol){
       $client = new Client('http://dev.markitondemand.com/Api/v2/Quote/json?symbol=' . $symbol->symbol);
       $response = $client->get()->send();
       $data = $response->json();
+
       $status = $data['Status'];
       $name = $data['Name'];
       $symbol = $data['Symbol'];
       $lastprice = $data['LastPrice'];
-      $change = $data['Change'];
+      $pricechange = $data['Change'];
       $changepercent = $data['ChangePercent'];
       $updated_at = $data['Timestamp'];
       $msdate = $data['MSDate'];
@@ -34,9 +36,33 @@ class Stocks {
 
     die();
 
-
-
     return view('/widget/stocks', $data);
+
+  }
+
+  public function putData($symbol){
+    $client = new Client('http://dev.markitondemand.com/Api/v2/Quote/json?symbol=' . $symbol);
+    $response = $client->get()->send();
+    $data = $response->json();
+
+    DB::table('stocks')->insert([
+      'Status' => $data['Status'],
+      'Name' => $data['Name'],
+      'Symbol' => $data['Symbol'],
+      'LastPrice' => $data['LastPrice'],
+      'pricechange' => $data['Change'],
+      'ChangePercent' => $data['ChangePercent'],
+      'MSDate' => $data['MSDate'],
+      'MarketCap' => $data['MarketCap'],
+      'Volume' => $data['Volume'],
+      'ChangeYTD' => $data['ChangeYTD'],
+      'ChangePercentYTD' => $data['ChangePercentYTD'],
+      'High' => $data['High'],
+      'Low' => $data['Low'],
+      'Open' => $data['Open']
+    ]);
+
+    return $this->getData();
 
   }
 

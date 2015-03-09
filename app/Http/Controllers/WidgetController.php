@@ -31,8 +31,12 @@ class WidgetController extends Controller {
     return $mlb->getData($data);
   }
 
-  public function stocks(Stocks $stocks){
-    return $stocks->getData();
+  public function stocks(Stocks $stocks, $symbol = ''){
+    if($symbol != ''){
+      return $stocks->putData($symbol);
+    }else{
+      return $stocks->getData();
+    }
   }
 
 	/**
