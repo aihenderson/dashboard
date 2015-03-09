@@ -10,13 +10,13 @@ class Stocks {
 
   public function showData(){
 
-    $stock_symbols = DB::table('stocks')->get();
-    if (Cache::has('stocks'))
+    $stocks = DB::table('stocks')->get();
+    if (Cache::has('stocks_cache'))
     {
-      return view('/widget/stocks', $stock_symbols);
+      return view('/widget/stocks')->withStocks($stocks);
     } else {
       $expiresAt = Carbon::now()->addMinutes(60);
-      Cache::put('stocks', $stock_symbols, $expiresAt);
+      Cache::put('stocks_cache', $stocks, $expiresAt);
       return $this->updateData();
     }
 
@@ -50,9 +50,9 @@ class Stocks {
 
   public function updateData(){
 
-    $stock_symbols = DB::table('stocks')->get();
-    foreach($stock_symbols as $symbol){
-      $client = new Client('http://dev.markitondemand.com/Api/v2/Quote/json?symbol=' . $symbol->symbol);
+    $stocks = DB::table('stocks')->get();
+    foreach($stocks as $stock){
+      $client = new Client('http://dev.markitondemand.com/Api/v2/Quote/json?symbol=' . $stock->symbol);
       $response = $client->get()->send();
       $data = $response->json();
 
@@ -73,6 +73,8 @@ class Stocks {
         'Low' => $data['Low'],
         'Open' => $data['Open']
       ]);
+
+      return $this->showData();
 
     }
   }

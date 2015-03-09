@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="06d0021c-511c-4814-a530-be5a5e1f9e2f" name="Default" comment="Working on stocks db">
+    <list default="true" id="06d0021c-511c-4814-a530-be5a5e1f9e2f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Stocks.php" afterPath="$PROJECT_DIR$/app/Stocks.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/WidgetController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/WidgetController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/widget/stocks.blade.php" afterPath="$PROJECT_DIR$/resources/views/widget/stocks.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dashboard.iws" />
@@ -45,6 +42,24 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - vmwmvcom_aihenderson@michael.asoshared.com" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="vmwmvcom_aihenderson" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="stocks" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -55,8 +70,8 @@
       <file leaf-file-name="Stocks.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Stocks.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43853343" vertical-offset="315" max-vertical-offset="2025">
-              <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.83824587" vertical-offset="584" max-vertical-offset="2075">
+              <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -72,6 +87,7 @@
       <list>
         <option value="$PROJECT_DIR$/database/migrations/2015_03_08_142854_create_stocks_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/WidgetController.php" />
+        <option value="$PROJECT_DIR$/resources/views/widget/stocks.blade.php" />
         <option value="$PROJECT_DIR$/app/Stocks.php" />
       </list>
     </option>
@@ -125,6 +141,114 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="dashboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dashboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dashboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dashboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dashboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dashboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dashboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dashboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dashboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dashboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dashboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widget" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dashboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dashboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -253,8 +377,14 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="editorconfig.notification" value="Applied .editorconfig settings" />
+    <property name="recentsLimit" value="5" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.stocks.blade.php">
+    <configuration default="false" name="stocks.blade.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://aihenderson.com/resources/views/widget/stocks.blade.php">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
       <module name="" />
       <setting name="vmparams" value="" />
@@ -519,7 +649,14 @@
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
-    <list size="0" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.stocks.blade.php" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.stocks.blade.php" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
@@ -531,12 +668,19 @@
       <created>1425865479989</created>
       <option name="number" value="Default" />
       <updated>1425865479989</updated>
-      <workItem from="1425865468092" duration="3477000" />
+      <workItem from="1425865468092" duration="4754000" />
     </task>
+    <task id="LOCAL-00001" summary="Working on stocks db">
+      <created>1425898971245</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1425898971245</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3477000" />
+    <option name="totallyTimeSpent" value="4754000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1413" extended-state="6" />
@@ -561,7 +705,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32997844" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39971244" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32997844" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -626,40 +770,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1391">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/bf810291/4a1035c8-7750-43dd-aaf2-1309b38527be/vmwmvcom_aihenderson..stocks">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Mlb.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.035945363" vertical-offset="0" max-vertical-offset="1625">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="18" />
-          <folding>
-            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1053,28 +1163,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/cache.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5571531" vertical-offset="0" max-vertical-offset="2125">
-          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-          <folding>
-            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/vlucas/phpdotenv/tests/fixtures/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.089863405" vertical-offset="0" max-vertical-offset="1391">
@@ -1124,18 +1212,6 @@
             <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Cache.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10783609" vertical-offset="0" max-vertical-offset="1391">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding>
-            <marker date="1425698290000" expanded="true" signature="-1:-1" placeholder=" @see \Illuminate\Cache\CacheManager ..." />
-            <marker date="1425698290000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425698290000" expanded="true" signature="-1:-1" placeholder=" Get the registered name of the component. ..." />
           </folding>
         </state>
       </provider>
@@ -1213,10 +1289,131 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/Console/stubs/cache.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29411766" vertical-offset="0" max-vertical-offset="1360">
+          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Cache.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2875629" vertical-offset="0" max-vertical-offset="1391">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <marker date="1425698290000" expanded="true" signature="-1:-1" placeholder=" @see \Illuminate\Cache\CacheManager ..." />
+            <marker date="1425698290000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425698290000" expanded="true" signature="-1:-1" placeholder=" Get the registered name of the component. ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/cache.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49676493" vertical-offset="534" max-vertical-offset="2125">
+          <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+          <folding>
+            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/framework/cache/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1391">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Mlb.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.035945363" vertical-offset="0" max-vertical-offset="1500">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="7" selection-end-column="36" />
+          <folding>
+            <marker date="1425865464000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425865464000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/bf810291/4a1035c8-7750-43dd-aaf2-1309b38527be/vmwmvcom_aihenderson..stocks">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/widget/stocks.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6470165" vertical-offset="800" max-vertical-offset="2475">
+          <caret line="68" column="42" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
+          <folding>
+            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Stocks.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43853343" vertical-offset="315" max-vertical-offset="2025">
-          <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.83824587" vertical-offset="584" max-vertical-offset="2075">
+          <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
           <folding />
         </state>
       </provider>

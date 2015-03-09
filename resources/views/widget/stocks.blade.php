@@ -58,20 +58,28 @@
               <tr>
                 <th>Symbol</th>
                 <th>Name</th>
-                <th>Change</th>
-                <!-- <th>ChangePercent</th>
-                <th>ChangePercentYTD</th>
-                <th>ChangeYTD</th>
-                <th>High</th>
                 <th>LastPrice</th>
-                <th>Low</th>
-                <th>Open</th> -->
-                <th>Timestamp</th>
+                <th>Change</th>
+                <th>ChangePercent</th>
+                {{--<th>ChangePercentYTD</th>--}}
+                {{--<th>ChangeYTD</th>--}}
+                {{--<th>High</th>--}}
+                {{--<th>Low</th>--}}
+                {{--<th>Open</th>--}}
+                {{--<th>Timestamp</th>--}}
                 <!-- <th>Volume</th> -->
               </tr>
               </thead>
               <tbody>
-
+              @foreach($stocks as $stock)
+                <tr>
+                  <th>{{{$stock->symbol}}}</th>
+                  <th>{{{$stock->name}}}</th>
+                  <th>${{{round($stock->lastprice, 2)}}}</th>
+                  <th>{{{round($stock->pricechange, 2)}}}</th>
+                  <th>{{{round($stock->changepercent, 2)}}}%</th>
+                </tr>
+              @endforeach
               </tbody>
             </table>
           </div>
