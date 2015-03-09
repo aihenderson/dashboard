@@ -35,7 +35,7 @@ class WidgetController extends Controller {
     if($symbol != ''){
       return $stocks->putData($symbol);
     }else{
-      return $stocks->getData();
+      return $stocks->showData();
     }
   }
 
