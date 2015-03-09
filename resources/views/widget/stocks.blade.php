@@ -72,7 +72,7 @@
               </thead>
               <tbody>
               @foreach($stocks as $stock)
-                <tr>
+                <tr class="{{{$stock->symbol}}}">
                   <th>{{{$stock->symbol}}}</th>
                   <th>{{{$stock->name}}}</th>
                   <th>${{{round($stock->lastprice, 2)}}}</th>

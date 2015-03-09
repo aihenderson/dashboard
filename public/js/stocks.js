@@ -46,7 +46,7 @@ $(function() {
 			if($('.stock_container .stock_container_table tbody tr').hasClass(data.Symbol)){
 				$('.stock_container .stock_container_error').html('<div class="alert alert-warning" role="alert"><p>Stock already added.</p></div>');
 			} else {
-				$('.stock_container .stock_container_table tbody').append("<tr class='" + data.Symbol + "'><td>" + data.Symbol + "</td><td>" + data.Name + "</td><td>$" + data.Change.toFixed(2) + "</td><td>" + data.Timestamp.slice(0,10) + data.Timestamp.slice(-5) + "</td></tr>");
+				$('.stock_container .stock_container_table tbody').append("<tr class='" + data.Symbol + "'><td>" + data.Symbol + "</td><td>" + data.Name + "</td><td>$" + data.LastPrice + "</td><td>$" + data.Change.toFixed(2) + "</td><td>" + data.ChangePercent.toFixed(2) + "%</td></tr>");
 				// $('.stock_container .stock_container_table tbody').append("<tr><td>" + data.Symbol + "</td><td>" + data.Name + "</td><td>$" + data.Change.toFixed(2) + "</td><td>" + data.ChangePercent.toFixed(2) + "%</td><td>" + data.ChangePercentYTD.toFixed(2) + "%</td><td>$" + data.ChangeYTD + "</td><td>$" + data.High + "</td><td>$" + data.LastPrice + "</td><td>$" + data.Low + "</td><td>$" + data.Open + "</td><td>" + data.Timestamp.slice(0,10) + data.Timestamp.slice(-5) + "</td><td>" + data.Volume.toLocaleString() + "</td></tr>");
 			}
 		} else {

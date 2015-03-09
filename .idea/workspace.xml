@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06d0021c-511c-4814-a530-be5a5e1f9e2f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Stocks.php" afterPath="$PROJECT_DIR$/app/Stocks.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/widget/stocks.blade.php" afterPath="$PROJECT_DIR$/resources/views/widget/stocks.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/stocks.js" afterPath="$PROJECT_DIR$/public/js/stocks.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dashboard.iws" />
@@ -67,11 +67,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Stocks.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Stocks.php">
+      <file leaf-file-name="stocks.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/widget/stocks.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.83824587" vertical-offset="584" max-vertical-offset="2075">
-              <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.6470165" vertical-offset="800" max-vertical-offset="2475">
+              <caret line="68" column="42" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -87,8 +87,9 @@
       <list>
         <option value="$PROJECT_DIR$/database/migrations/2015_03_08_142854_create_stocks_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/WidgetController.php" />
-        <option value="$PROJECT_DIR$/resources/views/widget/stocks.blade.php" />
         <option value="$PROJECT_DIR$/app/Stocks.php" />
+        <option value="$PROJECT_DIR$/public/js/stocks.js" />
+        <option value="$PROJECT_DIR$/resources/views/widget/stocks.blade.php" />
       </list>
     </option>
   </component>
@@ -154,60 +155,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dashboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dashboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dashboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dashboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cache" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dashboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dashboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -249,6 +196,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dashboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dashboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dashboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dashboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -668,7 +647,7 @@
       <created>1425865479989</created>
       <option name="number" value="Default" />
       <updated>1425865479989</updated>
-      <workItem from="1425865468092" duration="4754000" />
+      <workItem from="1425865468092" duration="5004000" />
     </task>
     <task id="LOCAL-00001" summary="Working on stocks db">
       <created>1425898971245</created>
@@ -676,11 +655,17 @@
       <option name="project" value="LOCAL" />
       <updated>1425898971245</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Working on stocks display">
+      <created>1425900315146</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1425900315146</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4754000" />
+    <option name="totallyTimeSpent" value="5004000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1413" extended-state="6" />
@@ -733,7 +718,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Working on stocks db" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on stocks db" />
+    <MESSAGE value="Working on stocks display" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on stocks display" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1376,36 +1362,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/widget/stocks.blade.php">
+    <entry file="file://$PROJECT_DIR$/public/js/stocks.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6470165" vertical-offset="800" max-vertical-offset="2475">
-          <caret line="68" column="42" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.5624093" vertical-offset="250" max-vertical-offset="1875">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding>
-            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425900233000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425900484000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1425900484000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1425900484000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1425900484000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1425900484000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1425900484000" expanded="true" signature="-1:-1" placeholder="{&quot;dataType&quot;: &quot;jsonp&quot;...}" />
+            <marker date="1425900484000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1425900484000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1425900484000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1425900484000" expanded="true" signature="-1:-1" placeholder="{&quot;dataType&quot;: &quot;jsonp&quot;...}" />
+            <marker date="1425900484000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1425900484000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1425900484000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1425900484000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1425900484000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1425900484000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1425900484000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1425900484000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1425900484000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1425900484000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1425900484000" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -1414,6 +1396,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.83824587" vertical-offset="584" max-vertical-offset="2075">
           <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
+          <folding>
+            <marker date="1425900285000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1425900285000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425900285000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425900285000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1425900285000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425900285000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425900285000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425900285000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425900285000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425900285000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425900285000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425900285000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425900285000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/widget/stocks.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6470165" vertical-offset="800" max-vertical-offset="2475">
+          <caret line="68" column="42" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
           <folding />
         </state>
       </provider>
