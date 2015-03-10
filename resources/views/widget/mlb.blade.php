@@ -132,74 +132,75 @@
                     <span class="show_media_text">Media</span>
                   </button>
                 </div>
-                <div class="mixed_media">
-                  @if(isset($game->game_media->media))
+                @if(isset($game->game_media->media) || isset($media))
+                  <div class="mixed_media">
                     <div class="clearfix media_links btn-toolbar">
-                      @foreach($game->game_media->media as $game_media)
-                        @if($game_media->attributes()->has_mlbtv == 'true')
-                          <div class="btn-group" role="group">
-                            <button type="button" class="btn btn-default btn-xs">
-                              <a href="http://mlb.mlb.com/shared/flash/mediaplayer/v4.5/R7/MP4.jsp?calendar_event_id={{{$game_media->attributes()->calendar_event_id}}}&media_id=&view_key=&media_type=video&source=MLB&sponsor=MLB&clickOrigin=&affiliateId=&team=mlb" target="_blank">
-                                <span class="glyphicon glyphicon-facetime-video btn-xs media_type"></span>
-                                <span class="media_link_text">MLB.tv</span>
-                              </a>
-                            </button>
-                            <button type="button" class="btn btn-default btn-xs">
-                              <a href="http://mlb.mlb.com/shared/flash/mediaplayer/v4.5/R7/MP4.jsp?calendar_event_id={{{$game_media->attributes()->calendar_event_id}}}&media_id=&view_key=&media_type=video&source=MLB&sponsor=MLB&clickOrigin=&affiliateId=&team=mlb" onclick="return !window.open(this.href, 'Mlb.tv', 'width=965,height=665')" target="_blank">
-                                <span class="glyphicon glyphicon-new-window btn-xs"></span>
-                              </a>
-                            </button>
-                          </div>
-                          <div class="btn-group" role="group">
-                            <button type="button" class="btn btn-default btn-xs">
-                              <a href="http://mlb.mlb.com/shared/flash/mediaplayer/v4.5/R7/MP4.jsp?calendar_event_id={{{$game_media->attributes()->calendar_event_id}}}&media_id=&view_key=&media_type=audio&source=MLB&sponsor=MLB&clickOrigin=&affiliateId=&team=mlb&feed_code=a" target="_blank">
-                                <span class="glyphicon glyphicon-facetime-video btn-xs media_type"></span>
-                                <span class="media_link_text">Audio Away</span>
-                              </a>
-                            </button>
-                            <button type="button" class="btn btn-default btn-xs">
-                              <a href="http://mlb.mlb.com/shared/flash/mediaplayer/v4.5/R7/MP4.jsp?calendar_event_id={{{$game_media->attributes()->calendar_event_id}}}&media_id=&view_key=&media_type=audio&source=MLB&sponsor=MLB&clickOrigin=&affiliateId=&team=mlb&feed_code=a" onclick="return !window.open(this.href, 'Mlb.tv', 'width=965,height=665')" target="_blank">
-                                <span class="glyphicon glyphicon-new-window btn-xs"></span>
-                              </a>
-                            </button>
-                          </div>
-                          <div class="btn-group" role="group">
-                            <button type="button" class="btn btn-default btn-xs">
-                              <a href="http://mlb.mlb.com/shared/flash/mediaplayer/v4.5/R7/MP4.jsp?calendar_event_id={{{$game_media->attributes()->calendar_event_id}}}&media_id=&view_key=&media_type=audio&source=MLB&sponsor=MLB&clickOrigin=&affiliateId=&team=mlb&feed_code=h" target="_blank">
-                                <span class="glyphicon glyphicon-facetime-video btn-xs media_type"></span>
-                                <span class="media_link_text">Audio Home</span>
-                              </a>
-                            </button>
-                            <button type="button" class="btn btn-default btn-xs">
-                              <a href="http://mlb.mlb.com/shared/flash/mediaplayer/v4.5/R7/MP4.jsp?calendar_event_id={{{$game_media->attributes()->calendar_event_id}}}&media_id=&view_key=&media_type=audio&source=MLB&sponsor=MLB&clickOrigin=&affiliateId=&team=mlb&feed_code=h" onclick="return !window.open(this.href, 'Mlb.tv', 'width=965,height=665')" target="_blank">
-                                <span class="glyphicon glyphicon-new-window btn-xs"></span>
-                              </a>
-                            </button>
-                          </div>
-                        @endif
-                      @endforeach
+                      @if($game->game_media->media->attributes()->has_mlbtv == 'true')
+                        <div class="btn-group" role="group">
+                          <button type="button" class="btn btn-default btn-xs">
+                            <a href="http://mlb.mlb.com/shared/flash/mediaplayer/v4.5/R7/MP4.jsp?calendar_event_id={{{$game->game_media->media->attributes()->calendar_event_id}}}&media_id=&view_key=&media_type=video&source=MLB&sponsor=MLB&clickOrigin=&affiliateId=&team=mlb" target="_blank">
+                              <span class="glyphicon glyphicon-facetime-video btn-xs media_type"></span>
+                              <span class="media_link_text">MLB.tv</span>
+                            </a>
+                          </button>
+                          <button type="button" class="btn btn-default btn-xs">
+                            <a href="http://mlb.mlb.com/shared/flash/mediaplayer/v4.5/R7/MP4.jsp?calendar_event_id={{{$game->game_media->media->attributes()->calendar_event_id}}}&media_id=&view_key=&media_type=video&source=MLB&sponsor=MLB&clickOrigin=&affiliateId=&team=mlb" onclick="return !window.open(this.href, 'Mlb.tv', 'width=965,height=665')" target="_blank">
+                              <span class="glyphicon glyphicon-new-window btn-xs"></span>
+                            </a>
+                          </button>
+                        </div>
+                      @endif
+                      @if($game->links->attributes()->away_audio != '')
+                        <div class="btn-group" role="group">
+                          <button type="button" class="btn btn-default btn-xs">
+                            <a href="http://mlb.mlb.com/shared/flash/mediaplayer/v4.5/R7/MP4.jsp?calendar_event_id={{{$game->game_media->media->attributes()->calendar_event_id}}}&media_id=&view_key=&media_type=audio&source=MLB&sponsor=MLB&clickOrigin=&affiliateId=&team=mlb&feed_code=a" target="_blank">
+                              <span class="glyphicon glyphicon-facetime-video btn-xs media_type"></span>
+                              <span class="media_link_text">Audio Away</span>
+                            </a>
+                          </button>
+                          <button type="button" class="btn btn-default btn-xs">
+                            <a href="http://mlb.mlb.com/shared/flash/mediaplayer/v4.5/R7/MP4.jsp?calendar_event_id={{{$game->game_media->media->attributes()->calendar_event_id}}}&media_id=&view_key=&media_type=audio&source=MLB&sponsor=MLB&clickOrigin=&affiliateId=&team=mlb&feed_code=a" onclick="return !window.open(this.href, 'Mlb.tv', 'width=965,height=665')" target="_blank">
+                              <span class="glyphicon glyphicon-new-window btn-xs"></span>
+                            </a>
+                          </button>
+                        </div>
+                      @endif
+                      @if($game->links->attributes()->home_audio != '')
+                        <div class="btn-group" role="group">
+                          <button type="button" class="btn btn-default btn-xs">
+                            <a href="http://mlb.mlb.com/shared/flash/mediaplayer/v4.5/R7/MP4.jsp?calendar_event_id={{{$game->game_media->media->attributes()->calendar_event_id}}}&media_id=&view_key=&media_type=audio&source=MLB&sponsor=MLB&clickOrigin=&affiliateId=&team=mlb&feed_code=h" target="_blank">
+                              <span class="glyphicon glyphicon-facetime-video btn-xs media_type"></span>
+                              <span class="media_link_text">Audio Home</span>
+                            </a>
+                          </button>
+                          <button type="button" class="btn btn-default btn-xs">
+                            <a href="http://mlb.mlb.com/shared/flash/mediaplayer/v4.5/R7/MP4.jsp?calendar_event_id={{{$game->game_media->media->attributes()->calendar_event_id}}}&media_id=&view_key=&media_type=audio&source=MLB&sponsor=MLB&clickOrigin=&affiliateId=&team=mlb&feed_code=h" onclick="return !window.open(this.href, 'Mlb.tv', 'width=965,height=665')" target="_blank">
+                              <span class="glyphicon glyphicon-new-window btn-xs"></span>
+                            </a>
+                          </button>
+                        </div>
+                      @endif
                     </div>
-                  @endif
-                  @if(isset($media))
-                    <ul class="clearfix highlights">
-                      @foreach($media as $highlight)
-                        @if((string)$highlight->attributes()->game_pk == (string)$game->attributes()->game_pk)
-                          <div>
-                            @foreach($highlight as $clip)
-                              {{--$highlight->media->headline--}}
-                              <li class="highlight" title="{{{$clip->headline}}}">
-                                <a class="highlight-link clearfix" href="{{{$clip->url}}}" headline="{{{$clip->headline}}}" >
-                                  <img src="{{{$clip->thumb}}}" />
-                                </a>
-                              </li>
-                            @endforeach
-                          </div>
-                        @endif
-                      @endforeach
-                    </ul>
-                  @endif
-                </div> {{-- Mixed Media --}}
-              @endif
+                    @if(isset($media))
+                      <ul class="clearfix highlights">
+                        @foreach($media as $highlight)
+                          @if((string)$highlight->attributes()->game_pk == (string)$game->attributes()->game_pk)
+                            <div>
+                              @foreach($highlight as $clip)
+                                <li class="highlight" title="{{{$clip->headline}}}">
+                                  <a class="highlight-link clearfix" href="{{{$clip->url}}}" headline="{{{$clip->headline}}}" >
+                                    <img src="{{{$clip->thumb}}}" />
+                                  </a>
+                                </li>
+                              @endforeach
+                            </div>
+                          @endif
+                        @endforeach
+                      </ul>
+                    @endif
+                  </div>
+                @endif{{--@if(isset($game->game_media->media) || isset($media))--}}
+              @endif {{-- IF GAME IS COMPLETED OR IN PROGRESS --}}
               {{--------------------------------------}}
 
             </div>
