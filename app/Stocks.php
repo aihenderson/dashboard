@@ -79,4 +79,10 @@ class Stocks {
     }
   }
 
+  public function widget(){
+    Cache::forever('Stocks', 'true');
+    $stocks = DB::table('stocks')->where('is_favorite', '1')->get();
+    return $stocks;
+  }
+
 }

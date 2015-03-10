@@ -3,13 +3,13 @@
 use Carbon\Carbon;
 use Guzzle\Plugin\Oauth\OauthPlugin;
 use Guzzle\Service\Client;
-use Guzzle\Cache;
+use Illuminate\Support\Facades\Cache;
 use Guzzle\Http\Exception\ClientErrorResponseException;
 use Illuminate\Support\Facades\View;
 
 class Mlb {
 
-  public function getData($date){
+  public function getData($date, $returnData = 'false'){
 
     if($date == ''){
       $year = date('Y');
@@ -48,13 +48,21 @@ class Mlb {
       $media = $data->highlights;
     }
 
-//  return view('widget/mlb', $games);
-    return view('widget/mlb')
-      ->withPrev($prev)
-      ->withNext($next)
-      ->withGames($games)
-      ->withMedia($media);
+    if($returnData == 'true'){
+      return $games;
+    }else{
+      return view('widget/mlb')
+        ->withPrev($prev)
+        ->withNext($next)
+        ->withGames($games)
+        ->withMedia($media);
+    }
 
   }
 
+  public function widget(){
+    Cache::forever('Mlb', 'true');
+    $mlb = $this->getData('', 'true');
+    return $mlb;
+  }
 }

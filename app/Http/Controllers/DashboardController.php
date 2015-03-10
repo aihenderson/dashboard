@@ -2,22 +2,35 @@
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use App\Panel;
-
-use App\Widget;
+use App\Mlb;
+use App\Stocks;
+use App\Twitter;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cache;
 
 class DashboardController extends Controller {
 
-	/**
-	 * Display a listing of the resource.
-	 *
-	 * @return Response
-	 */
-	public function index()
+  /**
+   * Display a listing of the resource.
+   *
+   * @param Twitter $twitter
+   * @param Mlb $mlb
+   * @param Stocks $stocks
+   * @return Response
+   */
+	public function index(Twitter $twitter, Mlb $mlb, Stocks $stocks)
   {
-    $widgets = Widget::all();
-    return view('dashboard', compact('widgets'));
+    $widgets = DB::table('widgets')->select('title')->get();
+    $twitter = $twitter->widget();
+    $mlb = $mlb->widget();
+    $stocks = $stocks->widget();
+
+    return view('dashboard')
+      ->withWidgets($widgets)
+      ->withTwitter($twitter)
+      ->withGames($mlb)
+      ->withStocks($stocks);;
 	}
 
 	/**

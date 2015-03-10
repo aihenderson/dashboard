@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Stocks;
 use App\Twitter;
 use App\Mlb;
+use App\Strava;
 use Carbon\Carbon;
 
 class WidgetController extends Controller {
@@ -39,7 +40,12 @@ class WidgetController extends Controller {
     }
   }
 
-	/**
+  public function strava(Strava $strava){
+    $strava->auth();
+  }
+
+
+  /**
 	 * Show the form for creating a new resource.
 	 *
 	 * @return Response

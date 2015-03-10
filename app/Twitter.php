@@ -2,10 +2,10 @@
 
 use Guzzle\Plugin\Oauth\OauthPlugin;
 use Guzzle\Service\Client;
-use Guzzle\Cache;
 use Illuminate\Support\Facades\View;
 use \Laravel\Socialite\Contracts\Factory as Socialte;
 use Laravel\Socialite\Facades\Socialite;
+use Illuminate\Support\Facades\Cache;
 
 class Twitter {
 
@@ -53,6 +53,10 @@ class Twitter {
 
   public function postUpdate($update){
     return $this->interact('statuses/update.json?status=' . $update, 'post');
+  }
+
+  public function widget(){
+    Cache::forever('Twitter', 'true');
   }
   
 }

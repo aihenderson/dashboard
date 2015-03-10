@@ -132,8 +132,8 @@
                     <span class="show_media_text">Media</span>
                   </button>
                 </div>
-                @if(isset($game->game_media->media) || isset($media))
-                  <div class="mixed_media">
+                <div class="mixed_media">
+                  @if(isset($game->game_media->media))
                     <div class="clearfix media_links btn-toolbar">
                       @if($game->game_media->media->attributes()->has_mlbtv == 'true')
                         <div class="btn-group" role="group">
@@ -181,26 +181,26 @@
                         </div>
                       @endif
                     </div>
-                    @if(isset($media))
-                      <ul class="clearfix highlights">
-                        @foreach($media as $highlight)
-                          @if((string)$highlight->attributes()->game_pk == (string)$game->attributes()->game_pk)
-                            <div>
-                              @foreach($highlight as $clip)
-                                <li class="highlight" title="{{{$clip->headline}}}">
-                                  <a class="highlight-link clearfix" href="{{{$clip->url}}}" headline="{{{$clip->headline}}}" >
-                                    <img src="{{{$clip->thumb}}}" />
-                                  </a>
-                                </li>
-                              @endforeach
-                            </div>
-                          @endif
-                        @endforeach
-                      </ul>
-                    @endif
-                  </div>
-                @endif{{--@if(isset($game->game_media->media) || isset($media))--}}
-              @endif {{-- IF GAME IS COMPLETED OR IN PROGRESS --}}
+                  @endif
+                  @if(isset($media))
+                    <ul class="clearfix highlights">
+                      @foreach($media as $highlight)
+                        @if((string)$highlight->attributes()->game_pk == (string)$game->attributes()->game_pk)
+                          <div>
+                            @foreach($highlight as $clip)
+                              <li class="highlight" title="{{{$clip->headline}}}">
+                                <a class="highlight-link clearfix" href="{{{$clip->url}}}" headline="{{{$clip->headline}}}" >
+                                  <img src="{{{$clip->thumb}}}" />
+                                </a>
+                              </li>
+                            @endforeach
+                          </div>
+                        @endif
+                      @endforeach
+                    </ul>
+                  @endif
+                </div> {{-- Mixed Media --}}
+              @endif
               {{--------------------------------------}}
 
             </div>

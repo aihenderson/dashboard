@@ -27,6 +27,8 @@ Route::get('widget/mlb/{date}', 'WidgetController@mlb');
 Route::get('widget/stocks', 'WidgetController@stocks');
 Route::get('widget/stocks/{symbol}', 'WidgetController@stocks');
 
+Route::get('widget/strava', 'WidgetController@strava');
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
