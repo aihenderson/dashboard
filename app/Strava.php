@@ -6,6 +6,8 @@ use Pest;
 use Strava\API\Client;
 use Strava\API\Service\REST;
 
+include '../vendor/autoload.php';
+
 class Strava {
 
   public function auth(){
@@ -23,14 +25,14 @@ class Strava {
         $token = $oauth->getAccessToken('authorization_code', array(
           'code' => $_GET['code']
         ));
-        print $token;
+        $this->getActivity($token);
       }
     } catch(Exception $e) {
       print $e->getMessage();
     }
   }
 
-  public function getActivity(){
+  public function getActivity($token){
     try {
       $adapter = new Pest('https://www.strava.com/api/v3');
       $service = new REST(env('STRAVA_TOKEN'), $adapter);
