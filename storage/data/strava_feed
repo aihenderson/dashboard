@@ -1,0 +1,19 @@
+"id" => 266227396
+"athlete" => array:16 [▼
+  "id" => 647616
+  "firstname" => "Timothy"
+  "lastname" => "Burgher"
+  "profile" => "https://dgalywyr863hv.cloudfront.net/pictures/athletes/647616/143797/1/large.jpg"
+]
+"name" => "Evening Ride"
+"distance" => 5557.4
+"moving_time" => 1187
+"elapsed_time" => 1204
+"total_elevation_gain" => 98.6
+"start_date_local" => "2015-03-10T18:49:27Z"
+"location_city" => "Burlington"
+"location_state" => "Vermont"
+"location_country" => "United States"
+"photo_count" => 0
+"average_speed" => 4.682
+"max_speed" => 12.1
