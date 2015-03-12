@@ -10,7 +10,7 @@ include '../vendor/autoload.php';
 
 class Strava {
 
-  public function auth(){
+  public function authorize(){
     try {
       $options = array(
         'clientId'     => env('STRAVA_CLIENT_ID'),
@@ -37,7 +37,7 @@ class Strava {
       $service = new REST(env('STRAVA_TOKEN'), $adapter);
       $client = new Client($service);
 
-      $feed = $client->getFeed(null,null,null,200);
+      $feed = $client->getFeed();
       return view('widget/strava')->withActivities($feed);
 
     } catch(Exception $e) {

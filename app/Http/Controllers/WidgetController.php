@@ -42,10 +42,11 @@ class WidgetController extends Controller {
 
   public function strava(Strava $strava){
     if (isset($_GET['code'])) {
-      $strava->getFeed();
+      return $strava->getFeed();
     }else{
-      $strava->auth();
+      return $strava->auth();
     }
+
   }
 
 
