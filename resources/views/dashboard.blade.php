@@ -1,4 +1,5 @@
 @extends('app')
+@extends('dashboard/strava')
 
 @section('content')
   <div class="container">
@@ -194,6 +195,9 @@
           </div>
         </div>
       @endforeach
+
+      @yield('strava')
+
     </div>
   </div>
 @endsection

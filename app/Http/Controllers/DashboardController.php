@@ -4,6 +4,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Mlb;
 use App\Stocks;
+use App\Strava;
 use App\Twitter;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
@@ -17,20 +18,23 @@ class DashboardController extends Controller {
    * @param Twitter $twitter
    * @param Mlb $mlb
    * @param Stocks $stocks
+   * @param Strava $strava
    * @return Response
    */
-	public function index(Twitter $twitter, Mlb $mlb, Stocks $stocks)
+	public function index(Twitter $twitter, Mlb $mlb, Stocks $stocks, Strava $strava)
   {
     $widgets = DB::table('widgets')->select('title')->get();
     $twitter = $twitter->widget();
     $mlb = $mlb->widget();
     $stocks = $stocks->widget();
+    $strava = $strava->widget();
 
     return view('dashboard')
       ->withWidgets($widgets)
       ->withTwitter($twitter)
       ->withGames($mlb)
-      ->withStocks($stocks);;
+      ->withStocks($stocks)
+      ->withStrava($strava);
 	}
 
 	/**

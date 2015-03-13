@@ -3,5 +3,27 @@ img.athleteProfile {
 }
 
 img.activity_type {
-    max-height: 1em;
+    max-height: 14px;
+    margin-bottom: 2px;
+}
+
+div.strava_login a {
+    background-color: rgb(252, 76, 2);
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    height: 40px;
+    line-height: 16px;
+    min-height: 40px;
+    padding: 11px 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    width: 200px;
+    left: 50%;
+    margin-left: -100px;
 }

@@ -1,21 +1,4 @@
-@extends('app')
-
-@section('includes')
-@endsection
-
-@section('stylesheets')
-  <link href="/css/strava.css" rel="stylesheet">
-@endsection
-
-@section('favicon')
-  <link rel="icon" href="/images/strava_favicon.ico">
-@endsection
-
-@section('scripts')
-  <script src="/js/strava.js"></script>
-@endsection
-
-@section('content')
+@section('strava')
   <div class="container">
     <div class="row">
 

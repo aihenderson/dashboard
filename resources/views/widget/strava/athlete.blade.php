@@ -18,26 +18,25 @@
 @section('content')
   <div class="container">
     <div class="row">
-
-      <?php $idArray = []; ?>
+      <div class="col-sm-10 col-sm-offset-1">
+        <div class="athlete col-md-12">
+          <div class="athleteName">
+            <span class="athleteFirstName">{{{$athlete["firstname"]}}}</span>
+            <span class="athleteLastname">{{{$athlete["lastname"]}}}</span>
+          </div>
+          <img class="athleteProfile" src='{{{$athlete["profile"]}}}'/>
+        </div>
+      </div>
       @foreach ($activities as $activity)
-        @if(!in_array($activity["athlete"]["id"], $idArray))
+        @if($activity["athlete"]["id"] == $athlete["id"])
           <div class="col-sm-10 col-sm-offset-1">
             <div class="panel panel-default">
               <div class="panel-body">
                 <div>
                   {{--<div class="id">{{{$activity["id"]}}}</div>--}}
                   {{--<div class="athleteId">{{{$activity["athlete"]["id"]}}}</div>--}}
-                  <div class="athlete col-md-2">
-                    <div class="athleteName">
-                      <a href="/widget/strava/athlete/{{{$activity["athlete"]["id"]}}}">
-                        <span class="athleteFirstName">{{{$activity["athlete"]["firstname"]}}}</span>
-                        <span class="athleteLastname">{{{$activity["athlete"]["lastname"]}}}</span>
-                      </a>
-                    </div>
-                    <img class="athleteProfile" src='{{{$activity["athlete"]["profile"]}}}'/>
-                  </div>
-                  <div class="activity col-md-10">
+
+                  <div class="activity col-md-12">
                     <div class="name">
                       <span class="value">
                         @if($activity["type"] == 'Run')
@@ -79,7 +78,6 @@
                     @endif
                   </div>
                 </div>
-                <?php array_push($idArray, $activity["athlete"]["id"]); ?>
               </div>
             </div>
           </div>
