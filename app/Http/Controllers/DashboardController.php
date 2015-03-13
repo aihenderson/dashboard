@@ -34,7 +34,7 @@ class DashboardController extends Controller {
       ->withTwitter($twitter)
       ->withGames($mlb)
       ->withStocks($stocks)
-      ->withStrava($strava);
+      ->withActivities($strava);
 	}
 
 	/**

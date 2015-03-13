@@ -35,7 +35,12 @@
                         <span class="athleteLastname">{{{$activity["athlete"]["lastname"]}}}</span>
                       </a>
                     </div>
-                    <img class="athleteProfile" src='{{{$activity["athlete"]["profile"]}}}'/>
+
+                    @if($activity["athlete"]["profile"] == 'avatar/athlete/large.png')
+                      <img class="athleteProfile" src='/images/default_strava.jpg'/>
+                    @else
+                      <img class="athleteProfile" src='{{{$activity["athlete"]["profile"]}}}'/>
+                    @endif
                   </div>
                   <div class="activity col-md-10">
                     <div class="name">

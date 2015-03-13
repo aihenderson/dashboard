@@ -1,0 +1,37 @@
+.dashboard .mixed_media {
+    display: block;
+}
+
+.athlete.col-sm-3 {
+    min-width: 62px;
+}
+
+.dashboard img.athleteProfile {
+    padding: 10px 0;
+}
+
+.dashboard .panel.panel-default {
+    margin: 5px 0;
+}
+
+.dashboard .strava .panel-body {
+    padding: 10px 0;
+}
+
+.dashboard .mlb .panel-body {
+    padding: 5px;
+    border: none;
+}
+
+.dashboard .mlb .panel-body .panel-default {
+    border: none;
+    padding: 10px 0px;
+}
+
+.row > div {
+    margin-bottom: 20px;
+}
+
+.dashboard .stocks table.stock_container_table {
+    margin-bottom: 0;
+}

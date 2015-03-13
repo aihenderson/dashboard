@@ -1,10 +1,4 @@
-{{-- TODO: Currently all of the 9th innings that end at the half are not displaying --}}
-
 @extends('app')
-
-@section('includes')
-  <?php include(app_path().'/Includes/Linkify.php'); ?>
-@endsection
 
 @section('stylesheets')
   <link href="/css/mlb.css" rel="stylesheet">

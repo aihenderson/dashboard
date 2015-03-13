@@ -3,19 +3,24 @@
 use Guzzle\Plugin\Oauth\OauthPlugin;
 use Guzzle\Service\Client;
 use Illuminate\Support\Facades\View;
-use \Laravel\Socialite\Contracts\Factory as Socialte;
 use Laravel\Socialite\Facades\Socialite;
 use Illuminate\Support\Facades\Cache;
+use League\OAuth1\Client\Server\User;
 
 class Twitter {
 
+  /**
+   * @var UserRepository
+   */
+  private $user;
   /**
    * @var Socialite
    */
   private $socialite;
 
-  public function __construct(Socialite $socialite){
+  public function __construct(Socialite $socialite, User $user){
     $this->socialite = $socialite;
+    $this->users = $user;
   }
 
   /**
@@ -28,7 +33,7 @@ class Twitter {
       return $this->getAuthorized();
     } else {
       $user = Socialite::with('twitter')->user();
-      return $this->interact('statuses/home_timeline.json');
+//      return $this->interact('statuses/home_timeline.json');
     }
   }
 

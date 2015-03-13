@@ -38,6 +38,8 @@ return [
     'client_id' => env('TWITTER_CLIENT_ID'),
     'client_secret' => env('TWITTER_CLIENT_SECRET'),
     'redirect' => env('TWITTER_REDIRECT'),
+    'token' => env('TWITTER_TOKEN'),
+    'token_secret' => env('TWITTER_TOKEN_SECRET'),
   ],
 
 ];

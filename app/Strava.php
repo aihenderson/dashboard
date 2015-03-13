@@ -1,4 +1,4 @@
-<?php namespace app;
+<?php namespace App;
 
 use Strava\API\OAuth;
 use Strava\API\Exception;

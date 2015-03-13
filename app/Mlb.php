@@ -44,12 +44,12 @@ class Mlb {
     }
     if($responseBody != '404'){
       $response = $client->get()->send();
-      $data = $response->xml();
-      $media = $data->highlights;
+      $mediadata = $response->xml();
+      $media = $mediadata->highlights;
     }
 
     if($returnData == 'true'){
-      return $games;
+      return $data;
     }else{
       return view('widget/mlb')
         ->withPrev($prev)
@@ -63,6 +63,11 @@ class Mlb {
   public function widget(){
     Cache::forever('Mlb', 'true');
     $mlb = $this->getData('', 'true');
-    return $mlb;
+    $gamesArray = [];
+    foreach($mlb->game as $game){
+      array_push($gamesArray, $game);
+    }
+    return $gamesArray;
+
   }
 }
