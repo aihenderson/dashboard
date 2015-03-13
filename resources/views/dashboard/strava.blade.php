@@ -7,14 +7,14 @@
           <div>
             {{--<div class="id">{{{$activity["id"]}}}</div>--}}
             {{--<div class="athleteId">{{{$activity["athlete"]["id"]}}}</div>--}}
-            <div class="athlete col-sm-3">
+            <div class="athlete col-sm-2">
               @if($activity["athlete"]["profile_medium"] == 'avatar/athlete/medium.png')
                 <img class="athleteProfile" src='/images/default_strava_medium.jpg'/>
               @else
                 <img class="athleteProfile" src='{{{$activity["athlete"]["profile_medium"]}}}'/>
               @endif
             </div>
-            <div class="activity col-sm-9">
+            <div class="activity col-sm-10">
               <div class="athleteName">
                 <a href="/widget/strava/athlete/{{{$activity["athlete"]["id"]}}}">
                   <span class="athleteFirstName">{{{$activity["athlete"]["firstname"]}}}</span>
