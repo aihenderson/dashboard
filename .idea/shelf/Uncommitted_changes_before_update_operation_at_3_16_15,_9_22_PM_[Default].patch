@@ -1,0 +1,130 @@
+Index: composer.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- composer.json	(revision a1ad5fa97952989f77d9f0d571ee863fd537c67d)
++++ composer.json	(revision )
+@@ -6,7 +6,7 @@
+ 	"type": "project",
+ 	"require": {
+       "laravel/framework": "5.0.*",
+-      "laravel/socialite": "2.0.*@dev",
++      "laravel/socialite": "~2.0",
+       "illuminate/html": "5.*",
+       "guzzlehttp/guzzle": "~5.0",
+ 		"illuminate/redis": "~5.0",
+Index: public/js/dashboard.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- public/js/dashboard.js	(revision a1ad5fa97952989f77d9f0d571ee863fd537c67d)
++++ public/js/dashboard.js	(revision )
+@@ -3,7 +3,7 @@
+   var $container = $('.container.dashboard');
+   $container.masonry({
+     columnWidth: 555,
+-    itemSelector: '.col-sm-6'
++    itemSelector: '.row > div'
+   });
+ 
+ });
+\ No newline at end of file
+Index: resources/views/dashboard/strava.blade.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- resources/views/dashboard/strava.blade.php	(revision a1ad5fa97952989f77d9f0d571ee863fd537c67d)
++++ resources/views/dashboard/strava.blade.php	(revision )
+@@ -1,20 +1,20 @@
+ <?php $idArray = []; ?>
+ @foreach ($activities as $activity)
+   @if(!in_array($activity["athlete"]["id"], $idArray))
+-    <div class="col-sm-12">
++    <div class="col-sm-6">
+       <div class="panel panel-default">
+         <div class="panel-body">
+           <div>
+             {{--<div class="id">{{{$activity["id"]}}}</div>--}}
+             {{--<div class="athleteId">{{{$activity["athlete"]["id"]}}}</div>--}}
+-            <div class="athlete col-sm-2">
++            <div class="athlete col-sm-4">
+               @if($activity["athlete"]["profile_medium"] == 'avatar/athlete/medium.png')
+                 <img class="athleteProfile" src='/images/default_strava_medium.jpg'/>
+               @else
+                 <img class="athleteProfile" src='{{{$activity["athlete"]["profile_medium"]}}}'/>
+               @endif
+             </div>
+-            <div class="activity col-sm-10">
++            <div class="activity col-sm-8">
+               <div class="athleteName">
+                 <a href="/widget/strava/athlete/{{{$activity["athlete"]["id"]}}}">
+                   <span class="athleteFirstName">{{{$activity["athlete"]["firstname"]}}}</span>
+\ No newline at end of file
+Index: public/css/dashboard.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- public/css/dashboard.css	(revision a1ad5fa97952989f77d9f0d571ee863fd537c67d)
++++ public/css/dashboard.css	(revision )
+@@ -7,7 +7,7 @@
+ }
+ 
+ .dashboard img.athleteProfile {
+-    padding: 10px 0;
++    padding: 18px 0;
+ }
+ 
+ .dashboard .panel.panel-default {
+@@ -34,4 +34,11 @@
+ 
+ .dashboard .stocks table.stock_container_table {
+     margin-bottom: 0;
++}
++
++.dashboard .strava .panel-body > div:nth-child(odd) {
++    padding-right: 5px;
++}
++.dashboard .strava .panel-body > div:nth-child(even) {
++    padding-left: 5px;
+ }
+\ No newline at end of file
+Index: composer.lock
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- composer.lock	(revision a1ad5fa97952989f77d9f0d571ee863fd537c67d)
++++ composer.lock	(revision )
+@@ -4,7 +4,7 @@
+         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+         "This file is @generated automatically"
+     ],
+-    "hash": "cdef5e6ce4413f9bc3e736aa2e930059",
++    "hash": "5e55a684fa011b812d506e76e8a3c62a",
+     "packages": [
+         {
+             "name": "basvandorst/stravaphp",
+@@ -919,7 +919,7 @@
+         },
+         {
+             "name": "laravel/socialite",
+-            "version": "2.0.x-dev",
++            "version": "v2.0.4",
+             "source": {
+                 "type": "git",
+                 "url": "https://github.com/laravel/socialite.git",
+@@ -3398,9 +3398,7 @@
+     ],
+     "aliases": [],
+     "minimum-stability": "stable",
+-    "stability-flags": {
+-        "laravel/socialite": 20
+-    },
++    "stability-flags": [],
+     "prefer-stable": false,
+     "prefer-lowest": false,
+     "platform": [],
