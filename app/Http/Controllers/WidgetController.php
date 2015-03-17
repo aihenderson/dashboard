@@ -3,6 +3,7 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use App\Videos;
 use Illuminate\Http\Request;
 use App\Stocks;
 use App\Twitter;
@@ -52,6 +53,18 @@ class WidgetController extends Controller {
     }
   }
 
+  public function youtube(Videos $youtube, $id = ''){
+    if($id != ''){
+      return $youtube->getVideo($id);
+    }else{
+      if(isset($_GET['query'])){
+        $query = $_GET['query'];
+        return $youtube->getVideoList($query);
+      }else{
+        return $youtube->index();
+      }
+    }
+  }
 
   /**
 	 * Show the form for creating a new resource.

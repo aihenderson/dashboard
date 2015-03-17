@@ -30,6 +30,9 @@ Route::get('widget/stocks/{symbol}', 'WidgetController@stocks');
 Route::get('widget/strava', 'WidgetController@strava');
 Route::get('widget/strava/athlete/{athlete}', 'WidgetController@strava');
 
+Route::get('widget/youtube', 'WidgetController@youtube');
+Route::get('widget/youtube/{id}', 'WidgetController@youtube');
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',

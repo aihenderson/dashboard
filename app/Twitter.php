@@ -2,7 +2,6 @@
 
 use Guzzle\Plugin\Oauth\OauthPlugin;
 use Guzzle\Service\Client;
-use Illuminate\Support\Facades\View;
 use Laravel\Socialite\Facades\Socialite;
 use Illuminate\Support\Facades\Cache;
 use League\OAuth1\Client\Server\User;
