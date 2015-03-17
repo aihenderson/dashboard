@@ -33,6 +33,8 @@ Route::get('widget/strava/athlete/{athlete}', 'WidgetController@strava');
 Route::get('widget/youtube', 'WidgetController@youtube');
 Route::get('widget/youtube/{id}', 'WidgetController@youtube');
 
+Route::get('widget/instagram', 'WidgetController@instagram');
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',

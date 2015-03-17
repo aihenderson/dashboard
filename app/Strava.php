@@ -1,4 +1,4 @@
-<?php namespace App;
+<?php namespace app;
 
 use Strava\API\OAuth;
 use Strava\API\Exception;
@@ -19,7 +19,6 @@ class Strava {
         'redirectUri'  => env('STRAVA_REDIRECT')
       );
       $oauth = new OAuth($options);
-
       if (!isset($_GET['code'])) {
         $link = '<a href="'.$oauth->getAuthorizationUrl().'">Connect with Strava</a>';
         return view('widget/strava/login')->withLink($link);
@@ -70,6 +69,7 @@ class Strava {
 
   public function widget(){
     Cache::forever('Strava', 'true');
+    $this->auth();
     $activities = $this->getFeed('data');
     return $activities;
   }

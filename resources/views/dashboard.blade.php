@@ -36,6 +36,10 @@
                 @include('dashboard/strava', $activities)
               @endif
 
+              @if($widget->title == "Youtube")
+                @include('dashboard/youtube')
+              @endif
+
             </div>
           </div>
         </div>

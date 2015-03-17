@@ -1,4 +1,4 @@
-<?php namespace App;
+<?php namespace app;
 
 use Guzzle\Service\Client;
 use Carbon\Carbon;

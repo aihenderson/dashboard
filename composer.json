@@ -6,13 +6,14 @@
 	"type": "project",
 	"require": {
       "laravel/framework": "5.0.*",
-      "laravel/socialite": "2.0.*@dev",
+      "laravel/socialite": "~2.0",
       "illuminate/html": "5.*",
       "guzzlehttp/guzzle": "~5.0",
 		"illuminate/redis": "~5.0",
 		"basvandorst/stravaphp": "~1.0",
 		"league/oauth2-client": "0.8.1",
-		"madcoda/php-youtube-api": "~1.0"
+		"madcoda/php-youtube-api": "~1.0",
+		"vinkla/instagram": "~2.0"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "~4.0",

@@ -7,7 +7,8 @@
 }
 
 .dashboard img.athleteProfile {
-    padding: 10px 0;
+    padding: 18px 0;
+    width: 62px;
 }
 
 .dashboard .panel.panel-default {
@@ -34,4 +35,19 @@
 
 .dashboard .stocks table.stock_container_table {
     margin-bottom: 0;
+}
+
+.dashboard .strava .panel-body > div:nth-child(odd) {
+    padding-right: 5px;
+}
+.dashboard .strava .panel-body > div:nth-child(even) {
+    padding-left: 5px;
+}
+
+.dashboard .youtube button.btn.btn-default.btn-xs.youtube_link_out {
+    display: inline-block;
+}
+
+.dashboard .youtube a.youtube_link {
+    display: inline-block;
 }

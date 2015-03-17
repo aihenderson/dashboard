@@ -44,6 +44,8 @@
           <li><a href="/widget/mlb">Mlb</a></li>
           <li><a href="/widget/stocks">Stocks</a></li>
           <li><a href="/widget/strava">Strava</a></li>
+          <li><a href="/widget/youtube">Youtube</a></li>
+          <li><a href="/widget/instagram">Instagram</a></li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">

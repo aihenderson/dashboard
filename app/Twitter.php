@@ -1,4 +1,4 @@
-<?php namespace App;
+<?php namespace app;
 
 use Guzzle\Plugin\Oauth\OauthPlugin;
 use Guzzle\Service\Client;

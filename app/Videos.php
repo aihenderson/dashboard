@@ -1,7 +1,6 @@
-<?php namespace App;
+<?php namespace app;
 
 use Madcoda\Youtube;
-use Illuminate\Support\Facades\Input;
 
 class Videos {
 
@@ -20,5 +19,10 @@ class Videos {
     $video = $youtube->getVideoInfo($id);
     return view('widget/youtube/player')->withVideo($video);
   }
+
+  public function widget(){
+    Cache::forever('Youtube', 'true');
+  }
+
 
 }

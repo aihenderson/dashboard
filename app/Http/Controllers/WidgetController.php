@@ -9,6 +9,7 @@ use App\Stocks;
 use App\Twitter;
 use App\Mlb;
 use App\Strava;
+use App\InstagramFeed;
 use Carbon\Carbon;
 
 class WidgetController extends Controller {
@@ -64,6 +65,11 @@ class WidgetController extends Controller {
         return $youtube->index();
       }
     }
+  }
+
+
+  public function instagram(InstagramFeed $instagram){
+    return $instagram->index();
   }
 
   /**

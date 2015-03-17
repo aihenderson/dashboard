@@ -42,4 +42,10 @@ return [
     'token_secret' => env('TWITTER_TOKEN_SECRET'),
   ],
 
+  'instagram' => [
+    'client_id' => env('INSTAGRAM_CLIENT_ID'),
+    'client_secret' => env('INSTAGRAM_CLIENT_SECRET'),
+    'redirect' => env('INSTAGRAM_REDIRECT'),
+  ],
+
 ];
