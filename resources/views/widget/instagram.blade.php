@@ -6,37 +6,25 @@
 @endsection
 
 @section('stylesheets')
-  <link href="/css/youtube.css" rel="stylesheet">
+  <link href="/css/instagram.css" rel="stylesheet">
 @endsection
 
 @section('favicon')
-  <link rel="icon" href="/images/youtube_favicon.ico">
+  <link rel="icon" href="/images/instagram_favicon.ico">
 @endsection
 
 @section('scripts')
-  <script src="/js/youtube.js"></script>
+  <script src="/js/instagram.js"></script>
 @endsection
 
 @section('content')
   <div class="container">
     <div class="row">
-
-      <?php dd($images); ?>
       
       @if(isset($images))
-        @foreach ($images as $image)
-          <div class="media">
-            <div class="media-left">
-              <a href="/widget/youtube/{{{$video->id->videoId}}}">
-                <img class="media-object" src="{{{$video->snippet->thumbnails->default->url}}}" alt="{{{$video->id->videoId}}}">
-              </a>
-            </div>
-            <div class="media-body">
-              <a href="/widget/youtube/{{{$video->id->videoId}}}">
-                <h4 class="media-heading">{{{$video->snippet->title}}}</h4>
-              </a>
-              {{{$video->snippet->description}}}
-            </div>
+        @foreach ($images->data as $image)
+          <div class="instagram_thumbnail">
+            <img class="instagram_thumbnail_img" src="{{{$image->images->thumbnail->url}}}" alt="Instagram Image">
           </div>
         @endforeach
       @endif
