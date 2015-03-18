@@ -51,3 +51,9 @@
 .dashboard .youtube a.youtube_link {
     display: inline-block;
 }
+
+.dashboard .instagram .instagram_thumbnail {
+    width: 150px;
+    float: left;
+    margin: 12px;
+}

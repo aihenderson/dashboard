@@ -40,6 +40,10 @@
                 @include('dashboard/youtube')
               @endif
 
+              @if($widget->title == "Instagram")
+                @include('dashboard/instagram')
+              @endif
+
             </div>
           </div>
         </div>

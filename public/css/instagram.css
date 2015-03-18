@@ -4,3 +4,12 @@
     height: 150px;
     margin: 5px;
 }
+
+.instagram_feed{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.instagram_update{
+    margin-bottom: 30px;
+}

@@ -7,6 +7,7 @@ use App\Stocks;
 use App\Strava;
 use App\Twitter;
 use App\Videos;
+use App\InstagramFeed;
 use Madcoda\Youtube;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
@@ -21,9 +22,11 @@ class DashboardController extends Controller {
    * @param Mlb $mlb
    * @param Stocks $stocks
    * @param Strava $strava
+   * @param Videos $videos
+   * @param Instagram $instagram
    * @return Response
    */
-	public function index(Twitter $twitter, Mlb $mlb, Stocks $stocks, Strava $strava, Videos $videos)
+	public function index(Twitter $twitter, Mlb $mlb, Stocks $stocks, Strava $strava, Videos $videos, InstagramFeed $instagram)
   {
     $widgets = DB::table('widgets')->select('title')->get();
     $twitter = $twitter->widget();
@@ -31,6 +34,7 @@ class DashboardController extends Controller {
     $stocks = $stocks->widget();
     $strava = $strava->widget();
     $videos = '';
+    $instagram = $instagram->widget();
 
     if(isset($_GET['query'])){
       $query = $_GET['query'];
@@ -44,7 +48,8 @@ class DashboardController extends Controller {
       ->withGames($mlb)
       ->withStocks($stocks)
       ->withActivities($strava)
-      ->withVideos($videos);
+      ->withVideos($videos)
+      ->withInstagram($instagram);
 	}
 
 	/**
