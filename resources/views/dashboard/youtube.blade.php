@@ -21,11 +21,11 @@
             <a class="youtube_link" href="/widget/youtube/{{{$video->id->videoId}}}">
               <h4 class="media-heading">{{{$video->snippet->title}}}</h4>
             </a>
-            <button type="button" class="btn btn-default btn-xs youtube_link_out">
-              <a href="/widget/youtube/{{{$video->id->videoId}}}" target="_blank">
+            <a href="/widget/youtube/{{{$video->id->videoId}}}" target="_blank">
+              <button type="button" class="btn btn-default btn-xs youtube_link_out">
                 <span class="glyphicon glyphicon-new-window btn-xs"></span>
-              </a>
-            </button>
+              </button>
+            </a>
             <div>
               {{{$video->snippet->description}}}
             </div>

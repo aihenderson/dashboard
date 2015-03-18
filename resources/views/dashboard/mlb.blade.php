@@ -86,47 +86,47 @@
                 <div class="clearfix media_links btn-toolbar">
                   @if($game->game_media->media->attributes()->has_mlbtv == 'true')
                     <div class="btn-group" role="group">
-                      <button type="button" class="btn btn-default btn-xs">
-                        <a href="http://mlb.mlb.com/shared/flash/mediaplayer/v4.5/R7/MP4.jsp?calendar_event_id={{{$game->game_media->media->attributes()->calendar_event_id}}}&media_id=&view_key=&media_type=video&source=MLB&sponsor=MLB&clickOrigin=&affiliateId=&team=mlb" target="_blank">
+                      <a href="http://mlb.mlb.com/shared/flash/mediaplayer/v4.5/R7/MP4.jsp?calendar_event_id={{{$game->game_media->media->attributes()->calendar_event_id}}}&media_id=&view_key=&media_type=video&source=MLB&sponsor=MLB&clickOrigin=&affiliateId=&team=mlb" target="_blank">
+                        <button type="button" class="btn btn-default btn-xs">
                           <span class="glyphicon glyphicon-facetime-video btn-xs media_type"></span>
                           <span class="media_link_text">MLB.tv</span>
-                        </a>
-                      </button>
-                      <button type="button" class="btn btn-default btn-xs">
-                        <a href="http://mlb.mlb.com/shared/flash/mediaplayer/v4.5/R7/MP4.jsp?calendar_event_id={{{$game->game_media->media->attributes()->calendar_event_id}}}&media_id=&view_key=&media_type=video&source=MLB&sponsor=MLB&clickOrigin=&affiliateId=&team=mlb" onclick="return !window.open(this.href, 'Mlb.tv', 'width=965,height=665')" target="_blank">
+                        </button>
+                      </a>
+                      <a href="http://mlb.mlb.com/shared/flash/mediaplayer/v4.5/R7/MP4.jsp?calendar_event_id={{{$game->game_media->media->attributes()->calendar_event_id}}}&media_id=&view_key=&media_type=video&source=MLB&sponsor=MLB&clickOrigin=&affiliateId=&team=mlb" onclick="return !window.open(this.href, 'Mlb.tv', 'width=965,height=665')" target="_blank">
+                        <button type="button" class="btn btn-default btn-xs">
                           <span class="glyphicon glyphicon-new-window btn-xs"></span>
-                        </a>
-                      </button>
+                        </button>
+                      </a>
                     </div>
                   @endif
                   @if($game->links->attributes()->away_audio != '')
                     <div class="btn-group" role="group">
-                      <button type="button" class="btn btn-default btn-xs">
-                        <a href="http://mlb.mlb.com/shared/flash/mediaplayer/v4.5/R7/MP4.jsp?calendar_event_id={{{$game->game_media->media->attributes()->calendar_event_id}}}&media_id=&view_key=&media_type=audio&source=MLB&sponsor=MLB&clickOrigin=&affiliateId=&team=mlb&feed_code=a" target="_blank">
+                      <a href="http://mlb.mlb.com/shared/flash/mediaplayer/v4.5/R7/MP4.jsp?calendar_event_id={{{$game->game_media->media->attributes()->calendar_event_id}}}&media_id=&view_key=&media_type=audio&source=MLB&sponsor=MLB&clickOrigin=&affiliateId=&team=mlb&feed_code=a" target="_blank">
+                        <button type="button" class="btn btn-default btn-xs">
                           <span class="glyphicon glyphicon-facetime-video btn-xs media_type"></span>
                           <span class="media_link_text">Audio Away</span>
-                        </a>
-                      </button>
-                      <button type="button" class="btn btn-default btn-xs">
-                        <a href="http://mlb.mlb.com/shared/flash/mediaplayer/v4.5/R7/MP4.jsp?calendar_event_id={{{$game->game_media->media->attributes()->calendar_event_id}}}&media_id=&view_key=&media_type=audio&source=MLB&sponsor=MLB&clickOrigin=&affiliateId=&team=mlb&feed_code=a" onclick="return !window.open(this.href, 'Mlb.tv', 'width=965,height=665')" target="_blank">
+                        </button>
+                      </a>
+                      <a href="http://mlb.mlb.com/shared/flash/mediaplayer/v4.5/R7/MP4.jsp?calendar_event_id={{{$game->game_media->media->attributes()->calendar_event_id}}}&media_id=&view_key=&media_type=audio&source=MLB&sponsor=MLB&clickOrigin=&affiliateId=&team=mlb&feed_code=a" onclick="return !window.open(this.href, 'Mlb.tv', 'width=965,height=665')" target="_blank">
+                        <button type="button" class="btn btn-default btn-xs">
                           <span class="glyphicon glyphicon-new-window btn-xs"></span>
-                        </a>
-                      </button>
+                        </button>
+                      </a>
                     </div>
                   @endif
                   @if($game->links->attributes()->home_audio != '')
                     <div class="btn-group" role="group">
-                      <button type="button" class="btn btn-default btn-xs">
-                        <a href="http://mlb.mlb.com/shared/flash/mediaplayer/v4.5/R7/MP4.jsp?calendar_event_id={{{$game->game_media->media->attributes()->calendar_event_id}}}&media_id=&view_key=&media_type=audio&source=MLB&sponsor=MLB&clickOrigin=&affiliateId=&team=mlb&feed_code=h" target="_blank">
+                      <a href="http://mlb.mlb.com/shared/flash/mediaplayer/v4.5/R7/MP4.jsp?calendar_event_id={{{$game->game_media->media->attributes()->calendar_event_id}}}&media_id=&view_key=&media_type=audio&source=MLB&sponsor=MLB&clickOrigin=&affiliateId=&team=mlb&feed_code=h" target="_blank">
+                        <button type="button" class="btn btn-default btn-xs">
                           <span class="glyphicon glyphicon-facetime-video btn-xs media_type"></span>
                           <span class="media_link_text">Audio Home</span>
-                        </a>
-                      </button>
-                      <button type="button" class="btn btn-default btn-xs">
-                        <a href="http://mlb.mlb.com/shared/flash/mediaplayer/v4.5/R7/MP4.jsp?calendar_event_id={{{$game->game_media->media->attributes()->calendar_event_id}}}&media_id=&view_key=&media_type=audio&source=MLB&sponsor=MLB&clickOrigin=&affiliateId=&team=mlb&feed_code=h" onclick="return !window.open(this.href, 'Mlb.tv', 'width=965,height=665')" target="_blank">
+                        </button>
+                      </a>
+                      <a href="http://mlb.mlb.com/shared/flash/mediaplayer/v4.5/R7/MP4.jsp?calendar_event_id={{{$game->game_media->media->attributes()->calendar_event_id}}}&media_id=&view_key=&media_type=audio&source=MLB&sponsor=MLB&clickOrigin=&affiliateId=&team=mlb&feed_code=h" onclick="return !window.open(this.href, 'Mlb.tv', 'width=965,height=665')" target="_blank">
+                        <button type="button" class="btn btn-default btn-xs">
                           <span class="glyphicon glyphicon-new-window btn-xs"></span>
-                        </a>
-                      </button>
+                        </button>
+                      </a>
                     </div>
                   @endif
                 </div>
