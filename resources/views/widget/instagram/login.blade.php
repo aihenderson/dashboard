@@ -11,7 +11,7 @@
 			<div class="panel panel-default">
 				<div class="panel-body">
 
-          <div class="strava_login">
+          <div class="instagram_login">
             {!!$link!!}
           </div>
 

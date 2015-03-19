@@ -3,6 +3,7 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use App\NYTimes;
 use App\Videos;
 use Illuminate\Http\Request;
 use App\Stocks;
@@ -65,6 +66,10 @@ class WidgetController extends Controller {
         return $youtube->index();
       }
     }
+  }
+
+  public function nytimes(NYTimes $nytimes){
+    return $nytimes->top();
   }
 
 

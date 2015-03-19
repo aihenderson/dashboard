@@ -37,7 +37,12 @@ class InstagramFeed {
 
   public function widget(){
     Cache::forever('Instagram', 'true');
-    $instagram = new Instagram(env('INSTAGRAM_CLIENT_ID'));
+    $config =  [
+      'apiKey' => env('INSTAGRAM_CLIENT_ID'),
+      'apiSecret' => env('INSTAGRAM_CLIENT_SECRET'),
+      'apiCallback' => env('INSTAGRAM_REDIRECT_URI'),
+    ];
+    $instagram = new Instagram($config);
     if (Cache::has('instagram_token'))
     {
       $data = Cache::get('instagram_token');
