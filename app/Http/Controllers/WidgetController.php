@@ -68,8 +68,15 @@ class WidgetController extends Controller {
     }
   }
 
-  public function nytimes(NYTimes $nytimes){
-    return $nytimes->top();
+  public function nytimes(NYTimes $nytimes, $section = ''){
+    if($section == '' || $section == 'top'){
+      return $nytimes->top();
+    }elseif($section == 'popular'){
+      return $nytimes->popular();
+    }elseif($section == 'newswire'){
+      return $nytimes->newswire();
+    }
+
   }
 
 
