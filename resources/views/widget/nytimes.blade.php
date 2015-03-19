@@ -19,7 +19,7 @@
         @if(isset($top))
           @foreach($top['results'] as $story)
             <div class="panel panel-default">
-              <div class="panel-heading">
+              <div class="panel-heading story_heading">
                 <a class="story_link" href="{{{$story['url']}}}" target="_blank">
                   <h3 class="story_title">{{{$story['title']}}}</h3>
                 </a>
@@ -28,7 +28,7 @@
                   - <span class="story_subsection"><small>{{{$story['subsection']}}}</small></span>
                 @endif
               </div>
-              <div class="media">
+              <div class="media story_body">
                 @if(isset($story['multimedia']) && is_array($story['multimedia']))
                   @foreach($story['multimedia'] as $image)
                     @if($image['format'] == 'thumbLarge')
