@@ -46,6 +46,7 @@
           <li><a href="/widget/strava">Strava</a></li>
           <li><a href="/widget/youtube">Youtube</a></li>
           <li><a href="/widget/instagram">Instagram</a></li>
+          <li><a href="/widget/instagram">NYTimes</a></li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
