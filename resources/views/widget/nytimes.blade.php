@@ -24,7 +24,7 @@
                   <h3 class="story_title">{{{$story['title']}}}</h3>
                 </a>
                 <span class="story_section"><small>{{{$story['section']}}}</small></span>
-                @if(isset($story['subsection']))
+                @if($story['subsection'] != '')
                   - <span class="story_subsection"><small>{{{$story['subsection']}}}</small></span>
                 @endif
               </div>
