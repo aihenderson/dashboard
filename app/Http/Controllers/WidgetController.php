@@ -5,6 +5,7 @@ use App\Http\Controllers\Controller;
 
 use App\NYTimes;
 use App\Videos;
+use App\Weather;
 use Illuminate\Http\Request;
 use App\Stocks;
 use App\Twitter;
@@ -82,6 +83,10 @@ class WidgetController extends Controller {
 
   public function instagram(InstagramFeed $instagram){
     return $instagram->index();
+  }
+
+  public function weather(Weather $weather){
+    return $weather->oneDay();
   }
 
   /**

@@ -38,6 +38,8 @@ Route::get('widget/instagram', 'WidgetController@instagram');
 Route::get('widget/nytimes', 'WidgetController@nytimes');
 Route::get('widget/nytimes/{section}', 'WidgetController@nytimes');
 
+Route::get('widget/weather', 'WidgetController@weather');
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
