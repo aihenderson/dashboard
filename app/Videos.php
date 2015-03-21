@@ -1,5 +1,6 @@
 <?php namespace app;
 
+use Illuminate\Support\Facades\Cache;
 use Madcoda\Youtube;
 
 class Videos {

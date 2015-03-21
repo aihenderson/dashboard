@@ -44,6 +44,14 @@
                 @include('dashboard/instagram')
               @endif
 
+              @if($widget->title == "Weather")
+                @include('dashboard/weather')
+              @endif
+
+              @if($widget->title == "NYTimes")
+                @include('dashboard/nytimes')
+              @endif
+
             </div>
           </div>
         </div>

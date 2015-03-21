@@ -1,10 +1,11 @@
 <?php namespace app;
 
 use Guzzle\Service\Client;
+use Illuminate\Support\Facades\Cache;
 
 class Weather {
 
-  public function tenDay($state = 'VT', $town = 'Williston', $returnData = 'false'){
+  public function tenDay( $returnData = 'false', $state = 'VT', $town = 'Williston'){
     $url = 'http://api.wunderground.com/api/'.env('WEATHER_KEY').'/forecast10day/q/'.$state.'/'.$town.'.json';
     $client = new Client($url);
     $response = $client->get()->send();
@@ -15,8 +16,8 @@ class Weather {
     return view('widget/weather')->withWeather($data);
   }
 
-  public function oneDay($state = 'VT', $town = 'Williston', $returnData = 'false'){
-    $url = 'http://api.wunderground.com/api/'.env('WEATHER_KEY').'/forecast10day/q/'.$state.'/'.$town.'.json';
+  public function fourDay( $returnData = 'false', $state = 'VT', $town = 'Williston'){
+    $url = 'http://api.wunderground.com/api/'.env('WEATHER_KEY').'/forecast/q/'.$state.'/'.$town.'.json';
     $client = new Client($url);
     $response = $client->get()->send();
     $data = $response->json();
@@ -28,7 +29,7 @@ class Weather {
 
   public function widget(){
     Cache::forever('Weather', 'true');
-    $data = $this->oneDay(null, null, 'true');
+    $data = $this->fourDay('true');
     return $data;
   }
 

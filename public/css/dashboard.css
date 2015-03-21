@@ -57,3 +57,27 @@
     float: left;
     margin: 12px;
 }
+
+.dashboard .weather img.weather_image {
+    padding: 19px;
+}
+
+.dashboard .nytimes p.story_title {
+    margin: 0;
+}
+
+.dashboard .nytimes .media.story_body.no_image .media-body {
+    padding: 0 15px 15px;
+}
+
+.dashboard .nytimes .media.story_body .media-body {
+    padding: 0 15px 15px 0;
+}
+
+.dashboard .nytimes img.story_image {
+    max-width: 100px;
+}
+
+.dashboard .nytimes p.story_content {
+    margin: 0;
+}

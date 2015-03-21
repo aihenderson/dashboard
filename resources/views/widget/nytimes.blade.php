@@ -16,20 +16,20 @@
   <div class="container">
     <div class="row">
       <div class="col-md-10 col-md-offset-1">
-        @if(isset($top))
-          @foreach($top['results'] as $story)
+        @if(isset($data))
+          @foreach($data['results'] as $story)
             <div class="panel panel-default">
               <div class="panel-heading story_heading">
                 <a class="story_link" href="{{{$story['url']}}}" target="_blank">
                   <h3 class="story_title">{{{$story['title']}}}</h3>
                 </a>
                 <span class="story_section"><small>{{{$story['section']}}}</small></span>
-                @if($story['subsection'] != '')
+                @if(isset($story['subsection']) && $story['subsection'] != '')
                   - <span class="story_subsection"><small>{{{$story['subsection']}}}</small></span>
                 @endif
               </div>
-              <div class="media story_body">
-                @if(isset($story['multimedia']) && is_array($story['multimedia']))
+              @if(isset($story['multimedia']) && is_array($story['multimedia']))
+                <div class="media story_body">
                   @foreach($story['multimedia'] as $image)
                     @if($image['format'] == 'thumbLarge')
                       <div class="media-left">
@@ -37,65 +37,9 @@
                       </div>
                     @endif
                   @endforeach
-                @endif
-                <div class="media-body">
-                  <p class="story_content">{{{$story['abstract']}}}</p>
-                  <span class="story_byline"><small>{{{$story['byline']}}}</small></span>
-                </div>
-              </div>
-            </div>
-          @endforeach
-        @elseif(isset($popular))
-          @foreach($popular['results'] as $story)
-            <div class="panel panel-default">
-              <div class="panel-heading story_heading">
-                <a class="story_link" href="{{{$story['url']}}}" target="_blank">
-                  <h3 class="story_title">{{{$story['title']}}}</h3>
-                </a>
-                <span class="story_section"><small>{{{$story['section']}}}</small></span>
-                @if($story['subsection'] != '')
-                  - <span class="story_subsection"><small>{{{$story['subsection']}}}</small></span>
-                @endif
-              </div>
-              <div class="media story_body">
-                @if(isset($story['multimedia']) && is_array($story['multimedia']))
-                  @foreach($story['multimedia'] as $image)
-                    @if($image['format'] == 'thumbLarge')
-                      <div class="media-left">
-                        <img class="story_image" src="{{{$image['url']}}}"/>
-                      </div>
-                    @endif
-                  @endforeach
-                @endif
-                <div class="media-body">
-                  <p class="story_content">{{{$story['abstract']}}}</p>
-                  <span class="story_byline"><small>{{{$story['byline']}}}</small></span>
-                </div>
-              </div>
-            </div>
-          @endforeach
-        @elseif(isset($newswire))
-          @foreach($newswire['results'] as $story)
-            <div class="panel panel-default">
-              <div class="panel-heading story_heading">
-                <a class="story_link" href="{{{$story['url']}}}" target="_blank">
-                  <h3 class="story_title">{{{$story['title']}}}</h3>
-                </a>
-                <span class="story_section"><small>{{{$story['section']}}}</small></span>
-                @if($story['subsection'] != '')
-                  - <span class="story_subsection"><small>{{{$story['subsection']}}}</small></span>
-                @endif
-              </div>
-              <div class="media story_body">
-                @if(isset($story['multimedia']) && is_array($story['multimedia']))
-                  @foreach($story['multimedia'] as $image)
-                    @if($image['format'] == 'thumbLarge')
-                      <div class="media-left">
-                        <img class="story_image" src="{{{$image['url']}}}"/>
-                      </div>
-                    @endif
-                  @endforeach
-                @endif
+              @else
+                <div class="media story_body no_image">
+              @endif
                 <div class="media-body">
                   <p class="story_content">{{{$story['abstract']}}}</p>
                   <span class="story_byline"><small>{{{$story['byline']}}}</small></span>

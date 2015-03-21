@@ -3,11 +3,13 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Mlb;
+use App\NYTimes;
 use App\Stocks;
 use App\Strava;
 use App\Twitter;
 use App\Videos;
 use App\InstagramFeed;
+use App\Weather;
 use Madcoda\Youtube;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
@@ -23,10 +25,12 @@ class DashboardController extends Controller {
    * @param Stocks $stocks
    * @param Strava $strava
    * @param Videos $videos
-   * @param Instagram $instagram
+   * @param Instagram|InstagramFeed $instagram
+   * @param Weather $weather
+   * @param NYTimes $nytimes
    * @return Response
    */
-	public function index(Twitter $twitter, Mlb $mlb, Stocks $stocks, Strava $strava, Videos $videos, InstagramFeed $instagram)
+	public function index(Twitter $twitter, Mlb $mlb, Stocks $stocks, Strava $strava, Videos $videos, InstagramFeed $instagram, Weather $weather, NYTimes $nytimes)
   {
     $widgets = DB::table('widgets')->select('title')->get();
     $twitter = $twitter->widget();
@@ -35,6 +39,8 @@ class DashboardController extends Controller {
     $strava = $strava->widget();
     $videos = '';
     $instagram = $instagram->widget();
+    $weather = $weather->widget();
+    $nytimes = $nytimes->widget();
 
     if(isset($_GET['query'])){
       $query = $_GET['query'];
@@ -49,6 +55,8 @@ class DashboardController extends Controller {
       ->withStocks($stocks)
       ->withActivities($strava)
       ->withVideos($videos)
+      ->withWeather($weather)
+      ->withData($nytimes)
       ->withInstagram($instagram);
 	}
 

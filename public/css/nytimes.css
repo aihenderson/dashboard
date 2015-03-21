@@ -5,3 +5,11 @@
 p.story_content {
     margin-top: 10px;
 }
+
+.media.story_body.no_image .media-body {
+    padding: 0 15px 15px;
+}
+
+.media.story_body .media-body {
+    padding: 0 15px 15px 0;
+}
