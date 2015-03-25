@@ -1,3 +1,4 @@
+<?php $gamecount = 0; ?>
 @foreach ($games as $game)
   @if($game->attributes()->away_name_abbrev == 'BOS' || $game->attributes()->home_name_abbrev == 'BOS' )
     <div class="col-sm-12">
@@ -138,5 +139,10 @@
         </div>
       </div>
     </div>
+    <?php $gamecount++; ?>
   @endif
 @endforeach
+
+@if($gamecount == 0)
+  <h3 class="nogame">No Red Sox Game Today</h3>
+@endif

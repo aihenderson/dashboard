@@ -29,6 +29,10 @@
     padding: 10px 0px;
 }
 
+.mlb h3.nogame {
+    text-align: center;
+}
+
 .row > div {
     margin-bottom: 20px;
 }
